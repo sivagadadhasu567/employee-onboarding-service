@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: employee_onboarding_service
+
+  r2dbc:
+    url: r2dbc:mysql://34.134.189.148:3306/hpinfoemployee
+    username: root
+    password: Siva@567
+
+  jackson:
+    time-zone: America/New_York
+
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    root: INFO
+    reactor.netty: INFO
+    org.springframework.r2dbc: INFO
+    io.r2dbc.mysql: INFO
